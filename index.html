@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Birthday Invitation</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- GOOGLE FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- AOS ANIMATION -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+</head>
+
+<body>
+
+  <!-- HERO SECTION -->
+
+  <section class="hero">
+
+    <div class="hero-card" data-aos="zoom-in">
+
+      <h1>Frista Turns 17 🎀</h1>
+
+      <p>
+        Join my sweet birthday party and let's celebrate together ✨
+      </p>
+
+      <a href="#event" class="btn">
+        Open Invitation
+      </a>
+
+      <!-- COUNTDOWN -->
+
+      <div class="countdown">
+
+        <div class="time-box">
+          <h2 id="days">00</h2>
+          <span>Days</span>
+        </div>
+
+        <div class="time-box">
+          <h2 id="hours">00</h2>
+          <span>Hours</span>
+        </div>
+
+        <div class="time-box">
+          <h2 id="minutes">00</h2>
+          <span>Minutes</span>
+        </div>
+
+        <div class="time-box">
+          <h2 id="seconds">00</h2>
+          <span>Seconds</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- EVENT SECTION -->
+
+  <section id="event">
+
+    <div class="container">
+
+      <h2 class="title" data-aos="fade-up">
+        Event Details 💌
+      </h2>
+
+      <div class="event-card" data-aos="fade-up">
+
+        <div class="event-info">
+          <h3>📅 Date</h3>
+          <p>27 May 2026</p>
+        </div>
+
+        <div class="event-info">
+          <h3>🕒 Time</h3>
+          <p>15:00 WIB</p>
+        </div>
+
+        <div class="event-info">
+          <h3>📍 Location</h3>
+          <p>My Sweet Party Place</p>
+        </div>
+
+        <br>
+
+        <a
+          href="https://maps.app.goo.gl/d3WtmBa6thyT7wcUA"
+          target="_blank"
+          class="btn">
+          Open Maps
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- GALLERY -->
+
+  <section>
+
+    <div class="container">
+
+      <h2 class="title" data-aos="fade-up">
+        DRESSCODE 🥼👖
+      </h2>
+
+      <p class="dresscode-text">
+  Blu-White / Grey-Beige / Blue-Grey (pastel)
+</p>
+
+      <div class="gallery">
+
+<div class="gallery">
+
+  <img
+    src="images/foto1.jpeg"
+    data-aos="zoom-in">
+
+  <img
+    src="images/foto2.jpeg"
+    data-aos="zoom-in">
+
+  <img
+    src="images/foto3.jpeg"
+    data-aos="zoom-in">
+
+</div>
+
+    </div>
+
+  </section>
+
+  <!-- MESSAGE -->
+
+  <section>
+
+    <div class="container">
+
+      <h2 class="title" data-aos="fade-up">
+        A Little Message 💖
+      </h2>
+
+      <div class="message-box" data-aos="fade-up">
+
+        <p>
+          Thank you for being part of my journey.
+          Your presence means so much to me and I hope
+          you can come celebrate this special day together ✨
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- RSVP -->
+
+  <section>
+
+    <div class="container">
+
+      <h2 class="title" data-aos="fade-up">
+        RSVP 🎉
+      </h2>
+
+     <form onsubmit="sendToWA(event)" data-aos="fade-up">
+
+  <input
+    type="text"
+    id="name"
+    placeholder="Your Name"
+    required>
+
+  <textarea
+    id="wish"
+    placeholder="Write your wishes..."
+    required></textarea>
+
+  <button type="submit" class="btn">
+    Send Wishes
+  </button>
+
+</form>
+
+    </div>
+
+  </section>
+
+  <!-- MUSIC BUTTON -->
+
+  <button
+    class="music-btn"
+    onclick="toggleMusic()">
+
+    🎵
+
+  </button>
+
+  <!-- AUDIO -->
+
+  <audio id="music" loop>
+
+    <source
+      src="music.mp3"
+      type="audio/mp3">
+
+  </audio>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    Made with 💖 by Frista
+
+  </footer>
+
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+
+</body>
+</html>
